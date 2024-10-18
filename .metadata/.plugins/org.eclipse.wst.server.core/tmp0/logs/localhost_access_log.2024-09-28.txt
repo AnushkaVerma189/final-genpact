@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [28/Sep/2024:01:16:55 +0530] "GET /TakeTest/css/styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Sep/2024:01:16:55 +0530] "GET /TakeTest/bgOff.png HTTP/1.1" 304 -

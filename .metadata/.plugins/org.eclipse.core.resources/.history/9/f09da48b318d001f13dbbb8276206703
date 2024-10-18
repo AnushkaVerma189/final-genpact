@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>SkillEdge</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- SimpleLightbox plugin CSS-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      .bi {
+        color: #f5b700 !important;
+      }
+      
+.watch{
+	background: none;
+	border: none;
+}
+#formWindow {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        }
+
+        #formContent {
+            background-color: #fff;
+            padding-top: 5px;
+            padding-left: 5px;
+            border-radius: 10px;
+            margin-left: 30%;
+            margin-top: 180px;	
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+ 
+ 
+    </style>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top" style="font-size: 30px"
+          >Skill<span style="color: rgb(255, 0, 128)">Edge</span></a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+                        
+            <li class="nav-item">
+            
+            <button class="watch nav-link" onclick="openForm()"> View Demo Video </button> 
+            </li>
+
+          </ul>
+        </div>	
+        
+        
+        <div id="formWindow">
+		    <div id="formContent">
+		        <span class="close" onclick="closeForm()">&times;</span>
+		        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/ARu7UeGJ0is?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+		        
+		    </div>
+		</div>    
+        	
+      </div>
+    </nav>
+    
+    			
+    
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container px-4 px-lg-5 h-100">
+			<div
+          class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-lg-8 align-self-end">
+            <h1 class="text-white font-weight-bold">
+              SkillEdge : Sharpen Your Abilities, Unlock Your Potential.
+            </h1>
+            <hr class="divider" />
+          </div>
+          <div class="col-lg-8 align-self-baseline">
+            <p class="text-white-75 mb-5" style="font-size: 20px">
+            SkillEdge is your gateway to mastering skills through comprehensive assessments.
+            Designed to sharpen your abilities, it provides insightful evaluations that help 
+            you grow and succeed in today’s competitive world.
+            </p>
+            <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About-->
+    <section class="page-section bg-primary" id="about">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">
+              Elevating Skills, One Assessment at a Time
+            </h2>
+            <hr class="divider divider-light" />
+            <p class="text-white-75 mb-4" style="font-size: 20px">
+              Push your skills to the forefront of technological advancement.
+               Challenge yourself to explore the limits of innovation and creativity. 
+               Join us to unlock new potentials and elevate your expertise!
+            </p>
+            <a class="btn btn-light btn-xl" href="/TakeTest/home.jsp"
+              >Get Started &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section" id="services">
+      <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">At Your Service</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="bi-unlock fs-1 text-primary"></i></div>
+              <h3 class="h4 mb-2">Authentication</h3>
+              <p class="text-muted mb-0">
+                Come and Experience a
+                 powerful authentication and E-mail verification system and 
+                 enjoy the new level of privacy!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2">
+                <i class="bi-pencil fs-1 text-primary"></i>
+              </div>
+              <h3 class="h4 mb-2">Test Management</h3>
+              <p class="text-muted mb-0">
+                Conceptualized and a modern way of testing.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="bi-clipboard-check fs-1 text-primary"></i></div>
+              <h3 class="h4 mb-2">Intuitive Test-Taking Interface</h3>
+              <p class="text-muted mb-0">
+                Experience the real pressure of Examination 
+                with smart-timer and realistic Environment!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="bi-person fs-1 text-primary"></i></div>
+              <h3 class="h4 mb-2">Personalized User Dashboard</h3>
+              <p class="text-muted mb-0">
+                Dashboard that summarizes and simplifies
+                 the overall progress of the user.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio-->
+
+    <!-- FAQs -->
+    <section class="page-section bg-dark text-white" id="faqs">
+      <div class="container px-4 px-lg-5">
+        <div class="text-center">
+          <h2 class="mt-0">Frequently Asked Questions</h2>
+          <hr class="divider" />
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAccordion">
+              <!-- Question 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed text-black"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    How do I sign up for an account?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    To sign up for an account, please click on the "Get Started" button on the homepage.
+                     Complete the required fields, including your name, email address, and password. 
+                     Following this, an email verification process will be initiated, during which you will
+                      receive an OTP to confirm your email address. Your account will be activated immediately
+                       upon successful verification.
+                  </div>
+                </div>
+              </div>
+              <!-- Ques    tion 2 -->
+              <!-- Question 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed text-black"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What types of assessments are available on the platform?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                 We provide a comprehensive range of assessments encompassing various programming languages,
+                  frameworks, and concepts. Whether you are a beginner seeking to evaluate your foundational skills
+                   or an experienced developer aiming to enhance your expertise, we have tailored assessments to suit 
+                   your needs. Explore our catalog to discover assessments in areas such as C++, Java, Python, and more.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed text-black"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    How do I view my test results?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                  Upon completing a test, you can view your results by logging into your account
+                   and navigating to the "Test Results" section. Here, you will find a summary of your performance, 
+                   including scores, correct answers, and areas for improvement. Additionally, you have the option to 
+                   download a detailed report for further analysis.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6 text-center">
+            <h2 class="mt-0">We’d Love to Hear from You!</h2>
+            <hr class="divider" />
+            <p class="text-muted mb-5">
+              Ready to embark on your next project with us? Send us a message, and we will respond promptly!
+            </p>
+          </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+          <div class="col-lg-6">
+            <form id="contactForm" action="/TakeTest/Contact" method="post">
+            
+              <!-- Name input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="name" name = "name" type="text" placeholder="Enter your name..." required />
+                <label for="name">Full name</label>
+              </div>
+              
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="email" type="email" name= "email" placeholder="name@example.com" required/>
+                <label for="email">Email address</label>
+              </div>
+              	
+              <!-- Phone number input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="phone" type="tel" name="phone" placeholder="(123) 456-7890" required pattern="[0-9]{10}"/>
+                <label for="phone">Phone number</label>
+              </div>
+              
+              <!-- Message input-->
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="message" type="text" name="text" placeholder="Enter your message here..."
+                  style="height: 10rem" required></textarea>
+                <label for="message">Message</label>
+              </div>
+              
+              <!-- Submit Button-->
+              <div class="d-grid">
+                <button class="btn btn-primary btn-xl" id="submitButton" type="submit" > Submit </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+      <div class="container px-4 px-lg-5">
+        <div class="small text-center text-muted">
+          Copyright &copy; 2024 - SkillEdge
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+    function openForm() {
+        document.getElementById("formWindow").style.display = "block";
+        document.getElementById("formContent").style.width = document.getElementById("youtubeVideo").offsetWidth + "px";
+    }
+
+    function closeForm() {
+        document.getElementById("formWindow").style.display = "none";
+    }
+</script>
+  </body>
+</html>
